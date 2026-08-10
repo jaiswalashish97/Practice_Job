@@ -1,10 +1,11 @@
-name: Schedule jobs on machine
-on: 
-  schedule:
-    - cron: " 0 0 * * * "
+name: ashish jaiswal third script
+on:
+  push: 
+    branches: [ main ]
+
 jobs:
-  schedule-jobs:
+  demo:
     runs-on: ubuntu-latest
     steps:
-      - name: my schedule job
-        run: echo "schedule-jobs"
+      - name: Echo the content on screen
+        run: echo "Welcome to GITHUB Actions
