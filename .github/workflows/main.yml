@@ -1,11 +1,10 @@
-name: My first job to run on github actions
+name: Schedule jobs on machine
 on: 
-  push: 
-    branches: [main]
+  schedule:
+    - cron: " 0 0 * * * "
 jobs:
-  demo:
+  schedule-jobs:
     runs-on: ubuntu-latest
-    steps: 
-      -  name: my first job on github actions
-         run: echo "hello World"
-    
+    steps:
+      - name: my schedule job
+        run: echo "schedule-jobs"
