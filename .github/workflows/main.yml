@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Echo the content on screen
-        run: echo "Welcome to GITHUB Actions
+        run: echo "Welcome to GITHUB Actions"
