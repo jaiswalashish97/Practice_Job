@@ -1,11 +1,12 @@
-name: ashish jaiswal third script
-on:
-  push: 
-    branches: [ main ]
-
+name: schedule cron jobs on Server
+  on: 
+  schedule:
+    - cron: "* * * * *"
 jobs:
-  demo:
+  run-scripts:
     runs-on: ubuntu-latest
     steps:
-      - name: Echo the content on screen
-        run: echo "Welcome to GITHUB Actions"
+      - name: schedule job
+        run: echo "schedule job"
+      
+  
