@@ -1,5 +1,5 @@
 name: schedule cron jobs on Server
-  on: 
+on: 
   schedule:
     - cron: "* * * * *"
 jobs:
