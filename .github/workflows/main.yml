@@ -1,0 +1,11 @@
+name: My first job to run on github actions
+on: 
+  push: 
+    branches: [main]
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps: 
+      -  name: my first job on github actions
+         run: echo "hello World"
+    
