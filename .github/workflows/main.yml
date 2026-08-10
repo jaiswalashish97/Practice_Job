@@ -1,7 +1,7 @@
 name: schedule cron jobs on Server
 on: 
   schedule:
-    - cron: "* * * * *"
+    - cron: "*/2 * * * *"
 jobs:
   run-scripts:
     runs-on: ubuntu-latest
